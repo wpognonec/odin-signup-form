@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "norse";
+  src: url("Norse-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+#left {
+  position: relative;
+  width: 500px;
+  flex-shrink: 0;
+  background-image: url("left-bg.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+}
+
+#section1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #E5E7EB;
+  padding: 30px 40px;
+}
+
+#section2 {
+  background: #E5E7EB;
+  height: 100%;
+}
+
+#header {
+  position: absolute;
+  background: slategray;
+  background-color: rgba(0, 0, 0, 30%);
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  width: 100%;
+}
+
+#header>p {
+  font-size: 5rem;
+  font-family: "norse";
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: #E5E7EB solid 1px;
+  padding-left: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 30%);
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 30px 40px;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.form-submit {
+  padding: 30px 40px;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #596D48;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-submit a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#left a {
+  color: white;
+}
+
+.photo-credit {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
